@@ -148,6 +148,101 @@
       margin-top: 20px;
       overflow: hidden;
     }
+    @media only screen and (max-width: 844px) {
+      #header{
+      font-size: 14px; 
+      }
+      .navbar-nav > li > a{
+      padding:none !important;
+      height: 40px;
+      position: relative;
+      font-size:20px !important;
+      padding-top:0px !important;
+      font-weight: bold !important;
+      }
+      .navbar img{
+        width:220px ;
+        height:auto;
+      }
+      aside{
+        width:100%;
+        border-top: 10px solid #C28E0E;;
+        padding-top: 20px;
+      }
+      aside p{
+        font-size: 16px;
+        width: 100%;
+      }
+      aside h1{
+      font-size: 30px;
+      font-weight: bold;
+      } 
+      aside h1 a{
+        font-size: 12px;
+        color:#C28E0E;
+      }
+      aside h2{
+        font-size: 20px;
+      }
+      #info a{
+        font-size: 12px;
+        text-decoration: none;
+        color:#CFB991;
+        width: 100%;  
+      }
+      #gallery {
+      width: 100%;
+      padding-left:0px !important;
+      height: auto;
+      text-align: center;  
+    }
+      #gallery p{
+        margin-top:2px;
+        font-size: 14px;
+        display: none;
+        float:right;
+      }
+      section img{
+        display: none;
+
+      }
+      div.sticky a {
+      text-decoration: none;
+      color:black;
+      font-size: 12px;
+      width: 100%;
+      }
+      div.sticky a:hover {
+        text-decoration: none;
+        color:#CFB991; 
+      }
+      div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        display: block;
+        margin-top: 20px;
+        overflow: hidden;
+      }
+      button {
+      text-decoration: none;
+      color:black;
+      background-color:white;
+      border: none;
+      font-size: 12px;       
+    }
+    button:hover {
+      text-decoration: none;
+      background-color:white;
+      border: none;
+      color:#CFB991;
+      font-size: 12px;
+    }
+      #mininav{
+      padding-left:14px;
+      
+    }
+    }
   </style>
 
 
@@ -155,36 +250,33 @@
     <div class="container"id="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-white" >
         <div class="col-md-7">
-        <img src="images/logo3.png" href="index.html" >
-
-      </div>
-          <!-- Responsive Navigation Bar Button -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse flex-row-reverse bd-highlight" class="row" id="navbarNav">
-            <ul class="navbar-nav p-2 bd-highlight" class="col-md-4">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="Team.html">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Research.html">Research</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Publication.html">Publication</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="Blog.html">Blog</a>
-              </li>
-            </ul>
-          </div>
+          <img src="images/logo3.png" href="index.html" >
+        </div>
+        <!-- Responsive Navigation Bar Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse bd-highlight" class="row" id="navbarNav">
+          <ul class="navbar-nav p-2 bd-highlight" class="col-md-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="Team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Research.html">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Publication.html">Publication</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Blog.html">Blog</a>
+            </li>
+          </ul>
         </div>
       </nav> 
-    </div>   
+    </div>  
      
     <!-- Content-->
     <aside>
@@ -192,6 +284,7 @@
         <div class="row" >
           <div class="col-3" id="mininav" >
             <div class="sticky">
+               <!-- Left Navigation Month can be Edited -->
               <h1>Month</h1>
                 <button onclick="showJan()">January</button>
                 </br>
@@ -218,27 +311,27 @@
                 <button onclick="showDec()" >December</button>
                 </br>
                 </br>
-
+              <!-- Left Navigation Tags can be Edited -->
               <h1>Tags</h1>  
-              <button onclick="show1()">Tag1</button>
-              </br>
-              <button onclick="show2()">Tag2</button>
-              </br>
-              <button onclick="show3()">Tag3</button>
-              </br>
-              <button onclick="show4()">Tag4</button>
-              </br> 
-              <button onclick="show5()">Tag5</button>
-              </br>  
-              <button onclick="show6()">Tag6</button>
-              </br>  
-              <button onclick="show7()">Tag7</button>
-              </br>
-              <button onclick="show8()">Tag8</button>
-              </br>
-              <button onclick="show9()">Tag9</button>
-              </br>
-              </br>
+                <button onclick="show1()">Tag1</button>
+                </br>
+                <button onclick="show2()">Tag2</button>
+                </br>
+                <button onclick="show3()">Tag3</button>
+                </br>
+                <button onclick="show4()">Tag4</button>
+                </br> 
+                <button onclick="show5()">Tag5</button>
+                </br>  
+                <button onclick="show6()">Tag6</button>
+                </br>  
+                <button onclick="show7()">Tag7</button>
+                </br>
+                <button onclick="show8()">Tag8</button>
+                </br>
+                <button onclick="show9()">Tag9</button>
+                </br>
+                </br>
 
             </div><!--end sticky-->
             <script>
@@ -2022,10 +2115,27 @@
       </div>
     </div>
     <p>tag 7</p>
-</section>    
-    <section id="tag7">
+  </section>    
+      <section id="tag7">
+        <h1 id="Type1">McDonalds &nbsp<a>mar</a> 
+        <h2>Author &nbsp<a>Date</a></h2>
+        <div class="container" id="gallery">
+          <div class="row" >
+            <div class="col" >
+              <img src="images/snow.jpg" alt="Cinque Terre">
+              <p>Caption</p>
+            </div>
+            <div class="col">
+              <img  src="images/forest.jpg" alt="Northern Lights">
+              <p>Caption</p>
+            </div>
+          </div>
+        </div>
+        <p>tag 7</p>
+    </section>
+    <section id="tag8">
       <h1 id="Type1">McDonalds &nbsp<a>mar</a> 
-      <h2>Author &nbsp<a>Date</a></h2>
+      <h2>Author &nbsp</h2><a>Date</a>
       <div class="container" id="gallery">
         <div class="row" >
           <div class="col" >
@@ -2038,9 +2148,9 @@
           </div>
         </div>
       </div>
-      <p>tag 7</p>
+      <p>tag 8</p>
   </section>
-  <section id="tag8">
+  <section id="tag9">
     <h1 id="Type1">McDonalds &nbsp<a>mar</a> 
     <h2>Author &nbsp<a>Date</a></h2>
     <div class="container" id="gallery">
@@ -2055,32 +2165,16 @@
         </div>
       </div>
     </div>
-    <p>tag 8</p>
-</section>
-<section id="tag9">
-  <h1 id="Type1">McDonalds &nbsp<a>mar</a> 
-  <h2>Author &nbsp<a>Date</a></h2>
-  <div class="container" id="gallery">
-    <div class="row" >
-      <div class="col" >
-        <img src="images/snow.jpg" alt="Cinque Terre">
-        <p>Caption</p>
-      </div>
-      <div class="col">
-        <img  src="images/forest.jpg" alt="Northern Lights">
-        <p>Caption</p>
-      </div>
-    </div>
-  </div>
-  <p>tag 9</p>
-</section>
-
+    <p>tag 9</p>
+  </section>
           </div><!--end info-->
         </div><!--end row-->
       </div> <!--end container-->
     </aside>
   <br>
   </body>
+  <!--Navigation Responsive Javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <footer>
     <div id="footer">
     <p>Purdue University | 401 N. Grant Street West Lafayette, Indiana 47906</p>
